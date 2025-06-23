@@ -1,0 +1,9 @@
+torch==2.0.1
+diffusers==0.20.0
+transformers==4.35.0
+onnxruntime==1.16.0
+tensorrt==8.6.0
+fastapi==0.104.1
+uvicorn==0.23.2
+numpy==1.26.0
+pillow==10.1.0
