@@ -21,17 +21,42 @@ To get started with this project, follow these steps:
     cd image-generation-ai
     ```
 
-2.  **Create a virtual environment (recommended):**
-    ```bash
-    python -m venv venv
-    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-    ```
-
-3.  **Install the required dependencies:**
+2.  **Install Python dependencies:**
     ```bash
     pip install -r requirements.txt
     ```
 
+3.  **Install Node.js Backend dependencies:**
+    ```bash
+    cd backend
+    npm install
+    ```
+
+4.  **Install React Front-End dependencies:**
+    ```bash
+    cd frontend
+    npm install
+    ```
+
+5.  **Run the Python FastAPI Backend:**
+    ```bash
+    uvicorn src.api:app --host 0.0.0.0 --port 8000
+    ```
+
+6.  **Run the Node.js Server:**
+    ```bash
+    cd backend
+    npm start
+    ```
+
+7.  **Run the React Front-End:**
+    ```bash
+    cd frontend
+    npm start
+    ```
+
+8.  **Open http://localhost:3000 in your browser**
+   
 ## Usage
 
 ### Generating Images
