@@ -1,4 +1,3 @@
-# src/config.py
 import os
 
 MODEL_PATH = "path/to/stable_diffusion_model"

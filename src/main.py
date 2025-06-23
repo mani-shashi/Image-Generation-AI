@@ -1,4 +1,3 @@
-# src/main.py
 import argparse
 from .model import DiffusionModel
 from .preprocess import TextPreprocessor

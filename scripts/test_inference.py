@@ -3,8 +3,6 @@ import torch
 from PIL import Image
 from diffusers import DiffusionPipeline
 
-# Load the pre-trained model
-# You can replace 'runwayml/stable-diffusion-v1-5' with other models if needed
 pipeline = DiffusionPipeline.from_pretrained("runwayml/stable-diffusion-v1-5", torch_dtype=torch.float16)
 pipeline.to("cuda")
 
@@ -28,7 +26,7 @@ def generate_image(prompt: str, output_dir: str = "generated_images", filename: 
     print(f"Image saved to {output_path}")
 
 if __name__ == "__main__":
-    # Example usage:
+    
     test_prompt = "A futuristic city at sunset, highly detailed, cyberpunk style"
     generate_image(test_prompt)
 

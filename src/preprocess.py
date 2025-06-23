@@ -1,4 +1,3 @@
-# src/preprocess.py
 from transformers import CLIPTokenizer
 
 class TextPreprocessor:
